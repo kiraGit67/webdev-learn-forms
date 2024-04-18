@@ -36,14 +36,13 @@ formElement.addEventListener(
       }
     } else if (event.target === usernameInput) {
       if (event.target.value.length > 0 && event.target.value.length < 10) {
-        customMessage +=
-          "Der Username muss aus mindestens 10 Zeichen bestehen.";
+        customMessage += `Der Username enthält nur ${event.target.value.length} Zeichen.\nEr muss aus mindestens 10 Zeichen bestehen.`;
       } else if (event.target.value.length === 0) {
         customMessage += "Bitte Usernamen angeben.";
       }
     } else if (event.target === passwordInput) {
       if (event.target.value.length > 0 && event.target.value.length < 8) {
-        customMessage += "Das Passwort muss aus mindestens 8 Zeichen bestehen.";
+        customMessage += `Das Passwort enthält nur ${event.target.value.length} Zeichen.\nEs muss aus mindestens 8 Zeichen bestehen.`;
       } else if (event.target.value.length === 0) {
         customMessage += "Bitte Passwort eingeben.";
       }
