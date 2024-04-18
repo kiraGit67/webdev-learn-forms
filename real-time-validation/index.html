@@ -16,7 +16,24 @@
     <main>
         <div class="wrapper">
             <form>
-
+                <div>
+                    <label for="useremail">User-E-Mail</label>
+                    <input required type="email" id="useremail" name="useremail" aria-describedby="email-validation" />
+                    <span id="email-validation" class="validation-message" aria-live="assertive"></span>
+                </div>
+                <div>
+                    <label for="username">Username</label>
+                    <input required minlength="10" type="text" id="username" name="username"
+                        aria-describedby="username-validation" />
+                    <span id="username-validation" class="validation-message" aria-live="assertive"></span>
+                </div>
+                <div>
+                    <label for="userpassword">Passwort</label>
+                    <input required minlength="8" type="password" id="userpassword" name="userpassword"
+                        id="userpassword" aria-describedby="password-validation" />
+                    <span id="password-validation" class="validation-message" aria-live="assertive"></span>
+                </div>
+                <button>Speichern</button>
             </form>
         </div>
     </main>
