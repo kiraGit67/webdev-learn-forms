@@ -2,6 +2,9 @@
 
 const formElement = document.querySelector("form");
 
+const passwordToggle = document.querySelector("#password-toggle");
+passwordToggle.innerText = "Passwort anzeigen";
+
 formElement.addEventListener(
   "blur",
   function (event) {
