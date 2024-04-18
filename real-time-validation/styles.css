@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  font-family: sans-serif;
+}
+
+label {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  padding: 0.35rem 0.5rem;
+  font-size: 1.15rem;
+  color: black;
+}
+
+button {
+  margin-top: 1.2rem;
+  padding: 0.5rem 0.65rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 10px;
+}
+
+.validation-message {
+  display: block;
+  padding-top: 0.4em;
+  color: red;
+}
