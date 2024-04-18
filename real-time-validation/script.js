@@ -51,6 +51,9 @@ formElement.addEventListener(
 
     //Validate the field
     const isValid = event.target.validity.valid;
+
+    event.target.setCustomValidity(customMessage);
+
     const message = event.target.validationMessage;
     const connectedValidationID = event.target.getAttribute("aria-describedby");
     const connectedValidation = connectedValidationID
