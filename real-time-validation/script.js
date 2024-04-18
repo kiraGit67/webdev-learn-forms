@@ -27,6 +27,28 @@ formElement.addEventListener(
     //Variable for customMessage
     let customMessage = "";
 
+    //Generate individual values for customMessage variable
+    if (event.target === emailInput) {
+      if (event.target.value.length > 0 && !event.target.value.includes("@")) {
+        customMessage += "Die E-Mail-Adresse muss ein @-Zeichen enthalten.";
+      } else if (event.target.value.length === 0) {
+        customMessage += "Bitte E-Mail-Adresse angeben.";
+      }
+    } else if (event.target === usernameInput) {
+      if (event.target.value.length > 0 && event.target.value.length < 10) {
+        customMessage +=
+          "Der Username muss aus mindestens 10 Zeichen bestehen.";
+      } else if (event.target.value.length === 0) {
+        customMessage += "Bitte Usernamen angeben.";
+      }
+    } else if (event.target === passwordInput) {
+      if (event.target.value.length > 0 && event.target.value.length < 8) {
+        customMessage += "Das Passwort muss aus mindestens 8 Zeichen bestehen.";
+      } else if (event.target.value.length === 0) {
+        customMessage += "Bitte Passwort eingeben.";
+      }
+    }
+
     //Validate the field
     const isValid = event.target.validity.valid;
     const message = event.target.validationMessage;
