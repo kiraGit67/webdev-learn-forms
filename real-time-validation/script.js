@@ -5,6 +5,17 @@ const formElement = document.querySelector("form");
 const passwordToggle = document.querySelector("#password-toggle");
 passwordToggle.innerText = "Passwort anzeigen";
 
+passwordToggle.addEventListener("click", () => {
+  const passwordInput = document.querySelector("#userpassword");
+  if (passwordInput.getAttribute("type") === "password") {
+    passwordInput.setAttribute("type", "text");
+    passwordToggle.innerText = "Passwort verbergen.";
+  } else {
+    passwordInput.setAttribute("type", "password");
+    passwordToggle.innerText = "Passwort anzeigen.";
+  }
+});
+
 formElement.addEventListener(
   "blur",
   function (event) {
