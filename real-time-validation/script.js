@@ -19,6 +19,14 @@ passwordToggle.addEventListener("click", () => {
 formElement.addEventListener(
   "blur",
   function (event) {
+    //constants for emailInput, usernameInput and passwordInput
+    const emailInput = document.querySelector("#useremail");
+    const usernameInput = document.querySelector("#username");
+    const passwordInput = document.querySelector("#userpassword");
+
+    //Variable for customMessage
+    let customMessage = "";
+
     //Validate the field
     const isValid = event.target.validity.valid;
     const message = event.target.validationMessage;
