@@ -72,8 +72,10 @@ formElement.addEventListener(
 
     if (connectedValidation && message && !isValid) {
       connectedValidation.innerText = message;
+      event.target.parentNode.classList.add("invalid");
     } else {
       connectedValidation.innerText = "";
+      event.target.parentNode.classList.remove("invalid");
     }
   },
   true
