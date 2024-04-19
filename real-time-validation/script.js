@@ -48,6 +48,15 @@ formElement.addEventListener(
         customMessage += "Bitte Passwort eingeben.";
       }
     } else if (event.target === telInput) {
+      if (
+        event.target.value.length > 0 &&
+        !/[0-9, +]{3,20}/.test(event.target.value)
+      ) {
+        customMessage +=
+          "Die Telefonnummer darf nur Zahlen zwischen 0 und 9 enthalten.";
+      } else if (event.target.value.length === 0) {
+        customMessage += "Bitte Telefon-Nummer angeben.";
+      }
     }
 
     //Validate the field
