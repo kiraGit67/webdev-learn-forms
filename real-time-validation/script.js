@@ -19,10 +19,11 @@ passwordToggle.addEventListener("click", () => {
 formElement.addEventListener(
   "blur",
   function (event) {
-    //constants for emailInput, usernameInput and passwordInput
+    //constants for emailInput, usernameInput, passwordInput and telInput
     const emailInput = document.querySelector("#useremail");
     const usernameInput = document.querySelector("#username");
     const passwordInput = document.querySelector("#userpassword");
+    const telInput = document.querySelector("#phone");
 
     //Variable for customMessage
     let customMessage = "";
@@ -46,6 +47,7 @@ formElement.addEventListener(
       } else if (event.target.value.length === 0) {
         customMessage += "Bitte Passwort eingeben.";
       }
+    } else if (event.target === telInput) {
     }
 
     //Validate the field
