@@ -34,6 +34,12 @@
                     <span id="password-toggle"></span>
                     <span id="password-validation" class="validation-message" aria-live="assertive"></span>
                 </div>
+                <div>
+                    <label for="phone">Telefon</label>
+                    <input type="tel" required pattern="[0-9, +]{3,20}" id="phone" name="phone"
+                        aria-describedby="phone-validation" />
+                    <span class="validation-message" id="phone-validation" aria-live="assertive"></span>
+                </div>
                 <button>Speichern</button>
             </form>
         </div>
