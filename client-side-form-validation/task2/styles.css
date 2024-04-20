@@ -41,6 +41,10 @@ input:invalid {
   font-style: italic;
 }
 
+input:invalid ~ .validation-message {
+  color: darkred;
+}
+
 button {
   padding: 0.75rem 0.5rem;
   font-size: 1.2rem;
