@@ -35,6 +35,12 @@ input:invalid {
   border: 2px solid red;
 }
 
+.validation-message {
+  display: block;
+  font-size: 75%;
+  font-style: italic;
+}
+
 button {
   padding: 0.75rem 0.5rem;
   font-size: 1.2rem;
