@@ -18,7 +18,7 @@
             <ul>
                 <li>
                     <label for="username">User name:</label>
-                    <input required type="text" name="username" id="username" minlength="5" maxlength="20">
+                    <input required pattern="^[a-z]\.[a-z0-9]{3,}$" type="text" name="username" id="username">
                 </li>
                 <li>
                     <label for="email">Email address:</label>
