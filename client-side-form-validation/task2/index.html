@@ -26,7 +26,7 @@
                 </li>
                 <li>
                     <label for="phone">Phone number:</label>
-                    <input required type="tel" name="phone" id="phone" maxlength="15">
+                    <input required pattern="^(?:\d{10}|(?:\d{3}\/){2}\d{4})$" type="tel" name="phone" id="phone">
                 </li>
                 <li>
                     <label for="comment">Comment:</label>
