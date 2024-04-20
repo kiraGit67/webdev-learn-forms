@@ -1,0 +1,47 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+  padding: 1em;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul > li + li {
+  margin-top: 1rem;
+}
+
+ul > li > label {
+  display: block;
+}
+
+ul > li > input,
+ul > li > textarea {
+  padding: 0.5rem 0.35rem;
+  width: 100%;
+  max-width: 30rem;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+button {
+  padding: 0.75rem 0.5rem;
+  font-size: 1.2rem;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 30rem;
+}
