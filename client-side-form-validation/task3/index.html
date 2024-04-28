@@ -14,7 +14,7 @@
         <form>
             <div>
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username">
+                <input required pattern="^[a-z]\.[a-z0-9]{3,}$" type="text" name="username" id="username">
             </div>
             <div>
                 <label for="mail">I would like you to provide me with an e-mail address:</label>
