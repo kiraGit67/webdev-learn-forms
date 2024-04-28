@@ -36,3 +36,13 @@ pwd.addEventListener("input", (event) => {
     pwd.setCustomValidity("");
   }
 });
+
+span.addEventListener("click", () => {
+  if (pwd.getAttribute("type") === "password") {
+    pwd.setAttribute("type", "text");
+    span.innerText = "Hide Passwort";
+  } else {
+    pwd.setAttribute("type", "password");
+    span.innerText = "Show Passwort";
+  }
+});
