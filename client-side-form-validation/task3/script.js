@@ -3,6 +3,7 @@
 const email = document.querySelector("#mail");
 const username = document.querySelector("#username");
 const pwd = document.querySelector("#pwd");
+const span = document.querySelector("span");
 
 email.addEventListener("input", (event) => {
   if (email.validity.typeMismatch) {
