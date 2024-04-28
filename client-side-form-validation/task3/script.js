@@ -14,3 +14,13 @@ email.addEventListener("input", (event) => {
     email.setCustomValidity("");
   }
 });
+
+username.addEventListener("input", (event) => {
+  if (username.validity.patternMismatch) {
+    username.setCustomValidity(
+      "Die Eingabe des Usernamens muss mit folgendem Muster übereinstimmen: a.bcd123"
+    );
+  } else {
+    username.setCustomValidity("");
+  }
+});
