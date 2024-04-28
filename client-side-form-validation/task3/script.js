@@ -25,3 +25,13 @@ username.addEventListener("input", (event) => {
     username.setCustomValidity("");
   }
 });
+
+pwd.addEventListener("input", (event) => {
+  if (pwd.validity.tooShort) {
+    pwd.setCustomValidity(
+      `Das Passwort muss mindestens 10 Zeichen lang sein. Sie haben nur ${pwd.value.length} Zeichen eingegeben.`
+    );
+  } else {
+    pwd.setCustomValidity("");
+  }
+});
