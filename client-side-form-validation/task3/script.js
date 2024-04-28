@@ -1,6 +1,7 @@
 "use strict";
 
 const email = document.querySelector("#mail");
+const username = document.querySelector("#username");
 
 email.addEventListener("input", (event) => {
   if (email.validity.typeMismatch) {
