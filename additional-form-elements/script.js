@@ -8,3 +8,10 @@ if (additionalFields && additionalFields.length > 0) {
     additionalField.hidden = true;
   });
 }
+
+if (radioFields && radioFields.length > 0) {
+  [...radioFields].forEach((radioField) => {
+    radioField.setAttribute("aria-expanded", true);
+    radioField.setAttribute("aria-controls", radioField.dataset.controls);
+  });
+}
