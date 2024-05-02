@@ -47,6 +47,14 @@ fieldset + button {
   margin-top: 1.75rem;
 }
 
+fieldset > div + div {
+  margin-top: 1.25rem;
+}
+
+fieldset > div > label {
+  font-size: 1.2rem;
+}
+
 button {
   padding: 0.75rem;
   color: white;
@@ -54,4 +62,8 @@ button {
   border: none;
   border-radius: 0.25rem;
   font-size: 1.35rem;
+}
+
+input[type="radio"] {
+  accent-color: dodgerblue;
 }
