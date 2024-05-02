@@ -13,5 +13,13 @@ if (radioFields && radioFields.length > 0) {
   [...radioFields].forEach((radioField) => {
     radioField.setAttribute("aria-expanded", true);
     radioField.setAttribute("aria-controls", radioField.dataset.controls);
+
+    radioField.addEventListener("click", (event) => {
+      const additionalField = document.getElementById(
+        event.target.getAttribute("aria-controls")
+      );
+
+      let isChecked = event.target.checked;
+    });
   });
 }
