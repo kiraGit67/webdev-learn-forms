@@ -20,6 +20,18 @@ if (radioFields && radioFields.length > 0) {
       );
 
       let isChecked = event.target.checked;
+
+      [...additionalFields].forEach((additionalField) => {
+        additionalField.hidden = true;
+      });
+
+      if (isChecked) {
+        event.target.setAttribute("aria-expanded", true);
+        additionalField.hidden = false;
+      } else {
+        event.target.setAttribute("aria-expanded", false);
+        additionalField.hidden = true;
+      }
     });
   });
 }
