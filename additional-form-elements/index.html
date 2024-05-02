@@ -19,11 +19,21 @@
             <fieldset>
                 <legend>Welche Web-Technologie bevorzugen Sie?</legend>
 
-                <input type="radio" name="webtechnology" value="html" id="html" class="radioField">
+                <input type="radio" name="webtechnology" value="html" id="html" class="radioField"
+                    data-controls="html-additional">
                 <label for="html">HTML</label>
+                <div class="additional" id="html-additional">
+                    <label for="html-element">Welches HTML-Element bevorzugen Sie?</label>
+                    <input type="text" name="html-element" id="html-element">
+                </div>
 
-                <input type="radio" name="webtechnology" value="css" id="css" class="radioField">
+                <input type="radio" name="webtechnology" value="css" id="css" class="radioField"
+                    data-controls="css-additional">
                 <label for="css">CSS</label>
+                <div class="additional" id="css-additional">
+                    <label for="css-property">Welche CSS Eigenschaft nutzen Sie bevorzugt?</label>
+                    <input type="text" name="css-property" id="css-property">
+                </div>
 
             </fieldset>
             <button>Sichern</button>
