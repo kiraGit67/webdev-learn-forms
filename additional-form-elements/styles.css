@@ -101,8 +101,22 @@ input[type="radio"] {
   border-color: dodgerblue;
 }
 
+.additional > input[type="text"]:hover {
+  border: 2px solid #0066cc;
+  border-radius: 2px;
+}
+
 .additional > input[type="text"]:focus {
   outline: 2px solid #ff3300;
   outline-offset: 1px;
   border-radius: 2px;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
+button:focus {
+  outline: 1px solid dodgerblue;
+  outline-offset: 2px;
 }
