@@ -34,7 +34,7 @@ form {
 }
 
 fieldset {
-  border: 1px dotted black;
+  border: 2px dotted black;
   padding: 0.75rem 0.5rem;
 }
 
@@ -75,4 +75,27 @@ input[type="radio"] {
   margin-bottom: 0.35rem;
   padding: 0.35rem 0.5rem;
   font-size: 1.1rem;
+}
+
+/* custom styling of form elements */
+.radioField {
+  position: absolute;
+  opacity: 0;
+}
+
+.radioField + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-inline-end: 0.35rem;
+}
+
+.radioField:checked + label::before {
+  background: #ff3300;
+  box-shadow: inset 0 0 0 3px whitesmoke;
+  border-color: dodgerblue;
 }
