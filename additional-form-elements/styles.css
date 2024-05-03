@@ -75,6 +75,7 @@ input[type="radio"] {
   margin-bottom: 0.35rem;
   padding: 0.35rem 0.5rem;
   font-size: 1.1rem;
+  margin-bottom: 1.15rem;
 }
 
 /* custom styling of form elements */
@@ -98,4 +99,10 @@ input[type="radio"] {
   background: #ff3300;
   box-shadow: inset 0 0 0 3px whitesmoke;
   border-color: dodgerblue;
+}
+
+.additional > input[type="text"]:focus {
+  outline: 2px solid #ff3300;
+  outline-offset: 1px;
+  border-radius: 2px;
 }
